@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Camilla Christensen - Portfolio</title>
+
+
+    <!--Henter skrifttyper fra Google-->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--Gør siden responsiv til mobil-->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!--Toppen af hjemmesiden til venstre med mit navn-->
+<header class="navbar">
+
+    <a href="#" class="logo">
+       Camilla Christensen
+       </a>
+<!--Stjerner billede ved logo/mit navn-->
+<!--alt="" er tom, fordi de er dekorative og ikke behøver blive læst op for brugeren    -->
+<div class="logo-stars-toppen">
+
+    <img src="images/stjerner 3.png"
+    alt=""
+    class="logo-stars"
+    >
+</div>
+
+    <!--Menu top linjen-->
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<main>
+<!--Denne linje er hele området/Hero section-->
+    <section class="hero">
+
+<!--Inde i den har vi den kode der gør at det ligger til venstre på siden-->
+     <div class="hero-text">
+         <p class="intro-text"> Hi, I'm Camilla</p>
+
+         <h1>
+             Designing digital <br>
+             experiences <br>
+             to <span>the future</span>
+         </h1>
+
+         <p class="hero-description">
+             I design intuitive, creative, and meaningful
+             digital experiences that make an impact.
+         </p>
+
+         <span class="creative-text">
+             Let's be creative together.
+         </span>
+
+         <a href="projects.html" class="hero-button">
+             View my work
+         </a>
+     </div>
+
+<!--Stadig inde i hele området er denne linje så at nogle af tingene ligger til højre-->
+<!--Det betyder, at man bagefter kan bruge CSS til at placere de to områder ved siden af hinanden-->
+<!--Showreel videon-->
+    <div class="showreel">
+
+        <h2>Showreel</h2>
+
+        <div class="showreel-placeholder">
+            <img src="images/play knap 1.png"
+                 alt="Play"
+                 class="play-button">
+        </div>
+        <p class="showreel-text">
+            A glimpse of my work
+        </p>
+    </div>
+
+    </section>
+
+    <!--Menu bokse-->
+    <section class="take-a-look">
+        <h2> Take a look</h2>
+
+        <div class="preview-cards">
+
+<!--Jeg har brugt article fordi hvert kort repræsenterer et selvstændigt stykke indhold-->
+<!--About me-->
+    <article class="preview-card">
+         <div class="image-placeholder"></div>
+         <a href="about.html">About me</a>
+    </article>
+<!--Skills-->
+    <article class="preview-card">
+        <div class="image-placeholder"></div>
+        <a href="skills.html">Skills</a>
+    </article>
+<!--Projects-->
+    <article class="preview-card">
+         <div class="image-placeholder"></div>
+         <a href="projects.html">Projects</a>
+    </article>
+        </div>
+    </section>
+</main>
+
+<!--Footer-->
+<footer class="footer">
+    <p class="footer-text">
+        Let's create <br>
+        the future together
+    </p>
+
+    <a href="camilla.mchristensen@hotmail.com" class="footer-mail">
+        Camilla.mchristensen@hotmail.com
+    </a>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

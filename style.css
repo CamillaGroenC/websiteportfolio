@@ -206,9 +206,9 @@ med denne fortælles browseren at tekstområdet højst må være 430 pixels bred
 /*max-width bruges så indholdet ikke bliver for bredt*/
 /*margin centrerer sektionen på siden*/
 .take-a-look {
-    max-width: 1200px;
+    max-width: 1600px;
     margin:  0 auto;
-    padding: 20px 70px 60px;
+    padding: 20px 40px 60px;
 }
 
 /*Take a look overskriften*/
@@ -227,10 +227,15 @@ med denne fortælles browseren at tekstområdet højst må være 430 pixels bred
 /*Grid-template-columns betyder lav 3 lige brede kolonner*/
 /*1fr betyder én del af den tilgængelige plads (alle tre bokse får lige meget plads*/
 /*gap giver afstand mellem kortene*/
+/*px = fast størrelse*/
+/*% = størrelse i forhold til det, elementet ligger inde i.*/
 .preview-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 40px;
+    width: 95%;
+
+    margin: 0 auto;
 }
 
 /*Designet på hver kort*/
@@ -238,7 +243,7 @@ med denne fortælles browseren at tekstområdet højst må være 430 pixels bred
 .preview-card {
     background-color: #f5edf8;
 
-    padding: 15px;
+    padding: 40px;
     border-radius: 10px;
     text-align: center;
 }
@@ -247,7 +252,7 @@ med denne fortælles browseren at tekstområdet højst må være 430 pixels bred
 /*Object-fit siger: fyld hele billedområdet ud uden at strække billedet unaturligt*/
 .preview-card img {
     width: 100%;
-    height: 140px;
+    height: 300px;
 
     object-fit: cover;
     display: block;
@@ -287,6 +292,97 @@ med denne fortælles browseren at tekstområdet højst må være 430 pixels bred
     font-size: 20px;
     margin-top: 14px;
 }
+
+/*Slider projekter*/
+
+.project-slider {
+    width: 100%;
+    padding: 80px 0;
+
+    overflow: hidden;
+}
+
+.project-slider h2 {
+    text-align: center;
+
+    color: #7A5C8C;
+    font-family: "Kalam", cursive;
+    font-size: 42px;
+
+    margin-bottom: 50px;
+}
+
+/*Området hvor projekterne kan ses*/
+.project-window {
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Rækken med projekterne*/
+/*Display flex så projekterne står ved siden af hinanden*/
+/*Width max content gør at rækken kan indeholde mange projekter og at der er plads til dem alle, den skal kunne fortsætte ud af skærmen*/
+.project-track {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: max-content;
+
+/*Gør bevægelsen lidt blød*/
+ transition: transform 0.1s ease-out;
+}
+
+/*Hvert project*/
+/*flex-shrink projekt kortet må ikke blive mindre bare fordi der mangler plads*/
+.project-card {
+    width: 500px;
+    flex-shrink: 0;
+}
+
+/*Projekt Billederne separate mål*/
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+
+/*Slider*/
+.slider-area {
+    width: 75%;
+    margin: 50px auto 0;
+}
+
+/*Selve slideren*/
+.project-range {
+    width: 100%;
+    height: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: #7A5C8C;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+/*Den runde knap på slideren*/
+/*Safari+Chrome*/
+.project-range::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #FDF9F3;
+    border: 6px solid #7A5C8C;
+    cursor: grab;
+}
+
+.project-range::-webkit-slider-thumb:active {
+    cursor: grabbing;
+}
+
 
 /*Footer*/
 .footer {

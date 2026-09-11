@@ -14,8 +14,9 @@
 
     <link rel="stylesheet" href="style.css">
 
+
     <!--Gør siden responsiv til mobil-->
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -56,9 +57,7 @@
          <p class="intro-text"> Hi, I'm Camilla</p>
 
          <h1>
-             Designing digital <br>
-             experiences <br>
-             to <span>the future</span>
+             Designing digital experiences <br> to <span>the future</span>
          </h1>
 
          <p class="hero-description">
@@ -111,6 +110,7 @@
         <div class="image-placeholder"></div>
         <a href="skills.html">Skills</a>
     </article>
+
 <!--Projects-->
     <article class="preview-card">
          <div class="image-placeholder"></div>
@@ -119,6 +119,66 @@
         </div>
     </section>
 </main>
+
+
+<!--Bevægelses bar-->
+<!--Section class er classen for hele sektionen. Den indeholder alt: overskriften, billederne og slideren.-->
+<section class="projectslider">
+
+    <h2>My Projects</h2>
+
+<!--Vindue hvor projekterne vises-->
+    <div class="project-window">
+
+<!--Denne række bliver flyttet med JavaSC-->
+<div class="project-track">
+
+<!--Projekt 1-->
+    <div class="project-card">
+        <img src="images/projektbillede.png" alt="Project1">
+        <h3>Project 1</h3>
+    </div>
+
+<!--Projekt 2-->
+    <div class="project-card">
+        <img src="images/projektbillede.png" alt="Project2">
+        <h3>Project 2</h3>
+    </div>
+
+<!--Project 3-->
+    <div class="project-card">
+        <img src="images/projektbillede.png" alt="Project3">
+        <h3>Project 3</h3>
+    </div>
+
+<!--Projekt 4-->
+    <div class="project-card">
+        <img src="images/projektbillede.png" alt="Project4">
+        <h3>Project 4</h3>
+    </div>
+
+</div>
+</div>
+
+<!--Slideren-->
+
+<div class="slider-area">
+
+<!-- Range - Fortæller browseren at den skal lave en slider-->
+<!-- min og max den mindste og den højeste værdi slideren kan have, kører fra 0-100 fx-->
+<!-- value bestemmer hvor slideren starter-->
+    <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="project-slider"
+            class="project-range"
+    >
+
+</div>
+</section>
+
 
 <!--Footer-->
 <footer class="footer">
@@ -132,16 +192,7 @@
     </a>
 </footer>
 
-
-
-
-
-
-
-
-
-
-
+<script src="script.js"></script>
 
 </body>
 </html>
